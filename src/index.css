@@ -2,95 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Gothic Metal GPS Tracker Design System - Dark Aesthetic */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Core Dark Palette - Gothic Metal */
+    --background: 0 0% 4%;
+    --bg-elevated: 0 0% 7%;
+    --foreground: 0 0% 90%;
+    --ink: 0 0% 92%;
+    --muted: 0 0% 63%;
+    
+    /* Metallic Accents */
+    --iron: 210 8% 75%;
+    --steel: 215 12% 50%;
+    --crimson: 350 77% 37%;
+    --violet: 265 65% 45%;
+    
+    /* UI Elements */
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 92%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 92%;
+    
+    --primary: 350 77% 37%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 92%;
+    
+    --accent: 265 65% 45%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 350 77% 37%;
+    
+    --radius: 0.25rem;
+    
+    /* Metallic Gradients */
+    --gradient-metal: linear-gradient(135deg, hsl(210 8% 65%), hsl(215 12% 80%), hsl(210 8% 70%));
+    --gradient-crimson: linear-gradient(135deg, hsl(350 77% 37%), hsl(350 77% 47%));
+    --gradient-violet: linear-gradient(135deg, hsl(265 65% 45%), hsl(265 65% 55%));
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 4%), hsl(0 0% 7%));
+    
+    /* Shadows - Gothic Metal */
+    --shadow-glow: 0 0 30px hsl(350 77% 37% / 0.3);
+    --shadow-deep: 0 10px 40px hsl(0 0% 0% / 0.7);
+    --shadow-metal: inset 0 1px 2px hsl(0 0% 100% / 0.1), 0 2px 8px hsl(0 0% 0% / 0.5);
+    
+    /* Spacing Scale */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
   }
 }
 
@@ -100,6 +72,157 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-ink antialiased;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+  }
+  
+  /* Gothic Metal Typography */
+  .headline {
+    @apply text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight;
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+  
+  .subhead {
+    @apply text-lg md:text-xl text-muted;
+  }
+  
+  /* Metal Sheen Effect */
+  .sheen {
+    background: var(--gradient-metal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  
+  /* Grain Texture Overlay */
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+@layer components {
+  /* Button System */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-medium transition-all duration-300;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+  }
+  
+  .btn-primary {
+    @apply btn bg-primary text-primary-foreground;
+    box-shadow: var(--shadow-glow), var(--shadow-metal);
+  }
+  
+  .btn-primary:hover {
+    @apply brightness-110;
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px hsl(350 77% 37% / 0.5), var(--shadow-metal);
+  }
+  
+  .btn-ghost {
+    @apply btn border border-border text-foreground;
+    background: transparent;
+  }
+  
+  .btn-ghost:hover {
+    @apply bg-secondary;
+  }
+  
+  /* Card System */
+  .card {
+    @apply bg-card rounded-lg border border-border p-6;
+    box-shadow: var(--shadow-deep);
+    backdrop-filter: blur(10px);
+  }
+  
+  .card-hover {
+    @apply card transition-transform duration-300;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px hsl(0 0% 0% / 0.8);
+  }
+  
+  /* Glass Effect */
+  .glass {
+    background: hsl(0 0% 7% / 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(0 0% 100% / 0.1);
+  }
+  
+  /* Layout Utilities */
+  .stack-1 { @apply space-y-1; }
+  .stack-2 { @apply space-y-2; }
+  .stack-3 { @apply space-y-3; }
+  .stack-4 { @apply space-y-4; }
+  .stack-6 { @apply space-y-6; }
+  .stack-8 { @apply space-y-8; }
+  
+  .cluster { @apply flex items-center gap-2; }
+  
+  /* Hairline Divider */
+  .divider {
+    @apply h-px bg-gradient-to-r from-transparent via-border to-transparent;
+  }
+}
+
+@layer utilities {
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+
+/* Animations */
+@keyframes shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(350 77% 37% / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(350 77% 37% / 0.6);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
