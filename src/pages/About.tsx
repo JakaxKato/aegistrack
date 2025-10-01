@@ -35,11 +35,19 @@ const About = () => {
   ];
 
   const team = [
-    { name: "Alex Chen", role: "Founder & CEO", initials: "AC" },
-    { name: "Maria Santos", role: "CTO", initials: "MS" },
-    { name: "James Park", role: "Head of Design", initials: "JP" },
-    { name: "Sarah Kim", role: "VP Engineering", initials: "SK" },
-  ];
+  { name: "M Athalla Pasha", role: "Founder & CEO", initials: "AP" },
+  { name: "Sulthon Arif Imadudin", role: "CTO", initials: "SA" },
+  { name: "Jihan Nur Mardatillah", role: "Head of Product", initials: "JN" },
+  { name: "Abyan Rizki Arianto", role: "Lead Backend Engineer", initials: "AR" },
+  { name: "Restu Jagat Wibisono", role: "Lead Frontend Engineer", initials: "RJ" },
+  { name: "Jaka Kelana Wijaya", role: "Cloud & DevOps Engineer", initials: "JK" },
+  { name: "Raihan Salman Baehaqi", role: "Cybersecurity Engineer", initials: "RS" },
+  { name: "Muhammad Fayiz Firdaus", role: "UI/UX Designer", initials: "MF" },
+  { name: "Fajri Hadiid Abdani", role: "AI/ML Engineer", initials: "FH" },
+  { name: "Tio Ramansah Fazrin", role: "Quality Assurance Engineer", initials: "TR" },
+  { name: "Agung Rizki Pangestu", role: "Business Development Manager", initials: "AR" }
+];
+
 
   return (
     <div className="min-h-screen">
